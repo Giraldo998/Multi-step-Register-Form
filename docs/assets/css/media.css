@@ -1,0 +1,11 @@
+@media (max-width: 640px) {
+   body::before{
+      top: 50%;
+      left: 30%;
+   }
+   body::after{
+      bottom: 45%;
+       right: 39%;
+      transform: rotate(180deg);
+   }
+}

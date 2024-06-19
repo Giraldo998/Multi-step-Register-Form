@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="assets/css/media.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+   <title>Multi-step Register form</title>
+</head>
+<body>
+   <main class="container">
+      <div class="register-container">
+         <form class="form step one" id="step-one">
+            <p class="heading">Register</p>
+            <label for="username">
+               <span class="tab-text">Name</span>
+               <input class="input" type="text" placeholder="enter your name" name="username" required>
+            </label>
+            <label for="useremail">
+               <span class="tab-text">Emai</span>
+               <input class="input" type="email" placeholder="example@gmail.com" name="useremail" required>
+            </label>
+            <div class="button-container">
+               <input type="submit" id="next-button-1" class="button" value="Continue"></input>
+            </div>
+         </form>
+
+         <form class="form step two" id="step-two">
+            <p class="heading">Which topics you are interested in?</p>
+            <label for="topic-1" class="topic">
+               <input  type="checkbox" name="topic-1">
+               <div class="check-text">
+                  <span>Software Development</span>
+               </div>
+            </label>
+            <label for="topic-2" class="topic">
+               <input  type="checkbox" name="topic-2">
+               <div class="check-text">
+                  <span>User Experience</span>
+               </div>
+            </label>
+            <label for="topic-3" class="topic">
+               <input type="checkbox" name="topic-3">
+               <div class="check-text">
+                  <span>Graphic Design</span>
+               </div>
+            </label>
+            <div class="button-container">
+               <input type="submit" id="next-button-2" class="button" value="Continue"></input>
+            </div>
+         </form>
+         
+         <form class="form step three" id="step-three">
+            <p class="heading">Summary</p>
+            <p class="name"><span >Name: </span> </p>
+            <p class="email"><span >Email: </span> </p>
+            <ul class="summary-list">
+               <span >topics:</span>
+            </ul>
+            <div class="button-container">
+               <input type="submit" id="finish-button" class="button" value="Confirm"></input>
+            </div>
+         </form>
+      </div>
+
+      <div class="stepper-container">
+         <p></p>
+         <ol class="stepper">
+            <li class="stepper-item" id="stepone"></li>
+            <li class="stepper-back one" id="back-one"></li>
+            <li class="stepper-item" id="steptwo"></li>
+            <li class="stepper-back two" id="back-two"></li>
+            <li class="stepper-item" id="stepthree"></li>
+            <li class="stepper-back three" id="back-three"></li>
+         </ol>
+      </div>
+   </main>
+   <script src="assets/index.js"></script>
+</body>
+</html>
